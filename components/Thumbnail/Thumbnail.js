@@ -14,6 +14,7 @@ const Thumbnail =forwardRef(({ result }, ref) => {
 					`${base_url}${result.backdrop_path || result.poster_path}` ||
 					`${base_url}${result.poster_path}`
 				}
+                    alt="images"
 			/>
 			<div className="p-2">
 				<p className="truncate max-w-md"> {result.overview}</p>
